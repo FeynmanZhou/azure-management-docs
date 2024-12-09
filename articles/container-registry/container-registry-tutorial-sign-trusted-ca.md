@@ -314,6 +314,9 @@ To learn more about assigning policy to a principal, see [Assign Access Policy](
     └── application/vnd.cncf.notary.signature
         └── sha256:d7258166ca820f5ab7190247663464f2dcb149df4d1b6c4943dcaac59157de8e
     ```
+ 
+ > [!NOTE]
+ > Notation uses [OCI Referrers Tag Schema](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#referrers-tag-schema) to store the signature in ACR by default. You can also enable [OCI Referrers API](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#listing-referrers) by using the flag `--force-referrers-tag false` if needed. The OCI Referrers API is supported by most of the ACR features except the CMK-encrypted registry.
 
 ## Verify a container image with Notation CLI 
 
